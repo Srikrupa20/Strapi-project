@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 71,
+      "minLength": 3
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 110
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Destination": {
+      "type": "enumeration",
+      "enum": [
+        "Karnataka",
+        "Kerala",
+        "Kashmir"
+      ],
+      "default": "Karnataka",
+      "required": true
+    },
+    "Places": {
+      "type": "enumeration",
+      "enum": [
+        "Hills",
+        "River",
+        "Falls"
+      ],
+      "required": true
+    },
+    "Price": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

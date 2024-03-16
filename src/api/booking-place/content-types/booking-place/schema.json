@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "booking_places",
+  "info": {
+    "singularName": "booking-place",
+    "pluralName": "booking-places",
+    "displayName": "Booking place"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "bookingid": {
+      "type": "uid",
+      "required": true
+    },
+    "paymentinfo": {
+      "type": "json"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "transactionid": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
